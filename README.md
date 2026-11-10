@@ -20,8 +20,8 @@ This project, created by Dev Dahiya during an internship at a cyber-security com
 #### Installation
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/404-dev-notFound/Discrete-Fourier-Transform-for-Network-Pattern.git
-   cd Discrete-Fourier-Transform-for-Network-Pattern
+   git clone https://github.com/404-dev-notFound/network-traffic-fft-analysis.git
+   cd network-traffic-fft-analysis
    ```
 2. **Install Dependencies:**
    ```sh
