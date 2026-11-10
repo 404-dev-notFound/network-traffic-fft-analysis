@@ -20,8 +20,8 @@ This project, created by Dev Dahiya during an internship at a cyber-security com
 #### Installation
 1. **Clone the Repository:**
    ```sh
-   git clone https://github.com/dev7777777dahiya/Discrete-Fourier-Transform-for-Network-Pattern.git
-   cd network-data-pattern-detection
+   git clone https://github.com/404-dev-notFound/Discrete-Fourier-Transform-for-Network-Pattern.git
+   cd Discrete-Fourier-Transform-for-Network-Pattern
    ```
 2. **Install Dependencies:**
    ```sh
