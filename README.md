@@ -1,23 +1,23 @@
-### Project Title: Network Data Pattern Detection
+# Project Title: Network Data Pattern Detection
 
-#### Description
+## Description
 This project, created by Dev Dahiya during an internship at a cyber-security company, aims to detect patterns in network data, primarily focusing on data received by a Wi-Fi router from local systems. The primary goal is to differentiate between real human activity and automated data pulls by the company or other systems. By analyzing these patterns, the project helps in identifying non-human inputs and miscellaneous sources of data traffic.
 
-#### Features
+## Features
 - **Data Input:** Accepts Parquet files containing network data.
 - **Data Processing:** Utilizes `pyarrow` for reading and processing the Parquet files.
 - **Pattern Detection:** Computes time differences between network events and bins the data to identify recurring patterns.
 - **FFT Analysis:** Uses `scipy.fft` to perform frequency analysis on the binned data.
 - **Visualization:** Generates graphs using `matplotlib` to visualize the frequency components and help infer the nature of the network patterns.
 
-#### How It Works
+## How It Works
 1. **Load Network Data:** The project reads a Parquet file containing network data, including source IP, destination organization, destination port, and timestamps of events.
 2. **Process Timestamps:** Calculates the time differences between consecutive events for the same source IP, destination organization, and destination port.
 3. **Bin Data:** Aggregates these time differences into bins of a specified size to identify patterns over time.
 4. **FFT Analysis:** Performs Fast Fourier Transform (FFT) on the binned data to analyze the frequency components of the network traffic.
 5. **Plot Results:** Visualizes the FFT results in a graph, highlighting the magnitude of different frequency components to help identify recurring patterns.
 
-#### Installation
+## Installation
 1. **Clone the Repository:**
    ```sh
    git clone https://github.com/404-dev-notFound/network-traffic-fft-analysis.git
@@ -28,7 +28,7 @@ This project, created by Dev Dahiya during an internship at a cyber-security com
    pip install -r requirements.txt
    ```
 
-#### Usage
+## Usage
 1. **Prepare Your Data:**
    - Ensure your network data is in a Parquet file format.
    - Place the Parquet file in the project directory or provide the correct path.
@@ -41,7 +41,7 @@ This project, created by Dev Dahiya during an internship at a cyber-security com
 3. **View the Results:**
    - The script will print the calculated time differences and display graphs of the FFT results.
 
-#### Example
+## Example
 ```python
 import pyarrow.parquet as pq
 from collections import defaultdict
@@ -111,15 +111,15 @@ for src_ip, dst_orgs in time_differences.items():
             plt.show()
 ```
 
-#### Future Enhancements
+## Future Enhancements
 - **Automated Pattern Recognition:** Implement machine learning algorithms to automatically classify human vs. non-human activity.
 - **Real-Time Analysis:** Extend the project to support real-time data processing and pattern detection.
 - **Advanced Visualization:** Add more sophisticated visualizations and dashboards for better insights.
 
-#### Contributing
+## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes. Ensure your code follows the project's coding standards and includes appropriate tests.
 
-#### License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 #### Acknowledgments
